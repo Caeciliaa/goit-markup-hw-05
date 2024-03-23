@@ -646,7 +646,7 @@ address {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btm-close {
@@ -812,10 +812,18 @@ address {
 }
 
 .checkbox-empty {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
 }
 
 .check-link {
@@ -823,19 +831,6 @@ address {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-}
-
-.check-text span {
-  display: flex;
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  margin-right: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
 }
 
 .modal-check:checked + .check-text span {
