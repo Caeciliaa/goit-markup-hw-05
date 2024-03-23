@@ -467,7 +467,7 @@ address {
   padding: 100px 0;
 }
 
-.footer-container {
+.footer .container {
   display: flex;
   align-items: baseline;
   justify-content: start;
@@ -478,6 +478,7 @@ address {
 }
 
 .footer-social {
+  margin-bottom: 80px;
 }
 
 .logo {
@@ -507,6 +508,10 @@ address {
   margin-bottom: 16px;
 }
 
+.footer-social {
+  margin-right: 80px;
+}
+
 .footer-title {
   font-weight: 500;
   font-size: 16px;
@@ -514,10 +519,6 @@ address {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-}
-
-.footer-social {
-  margin-right: 80px;
 }
 
 .footer-social-list {
@@ -551,7 +552,6 @@ address {
 }
 
 .footer-subscribe {
-  /* margin-left: 80px; */
 }
 .footer-subscribe-text {
   font-weight: 500;
@@ -564,8 +564,6 @@ address {
 
 .footer-form {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 24px;
 }
 .footer-input {
@@ -684,8 +682,8 @@ address {
   border: none;
 }
 
-.modal-btm:hover .modal-icon-close,
-.modal-btm:focus .modal-icon-close {
+.modal-btm-close:hover > .modal-icon-close,
+.modal-btm-close:focus > .modal-icon-close {
   fill: #ffffff;
 }
 
